@@ -1,4 +1,7 @@
 import React from 'react'
+import lineImg from '../assets/images/line.png'
+import appImg from '../assets/images/a.png'
+
 
 export default function Appointment() {
     return (
@@ -9,7 +12,7 @@ export default function Appointment() {
                         <div className="app-text">
                             <h2 className='app-small'>APPOINTMENT</h2>
                             <h3 className='app-heading'>Make An Appointment</h3>
-                            <img className='app-line' src="/images/line.png" alt="line" />
+                            <img className='app-line' src={lineImg} alt="line" />
                             <p className="app-para">A wonderful serenity has taken possession of my.
                             </p>
                         </div>
@@ -29,7 +32,7 @@ export default function Appointment() {
                         </div>
                     </div>
 
-                    <img className='app-img' src="/images/a.png" alt="" />
+                    <img className='app-img' src={appImg} alt="" />
                 </div>
             </div>
 
