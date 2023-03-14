@@ -1,0 +1,1785 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.location {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background-color: #292929;
+}
+
+.pin {
+    display: flex;
+    width: 40%;
+    position: relative;
+    top: 25px;
+    left: 345px;
+    color: #fff;
+
+}
+
+.pin-img {
+    width: auto;
+    height: 53px;
+}
+
+.para-pin {
+    width: 320px;
+    height: 48px;
+    margin-top: 5px;
+}
+
+.phone {
+    display: flex;
+    width: 20%;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    left: 270px;
+}
+
+.phone-img {
+    width: auto;
+    height: 50px;
+}
+
+.numbers {
+    margin-top: 5px;
+}
+
+.button {
+    width: 39%;
+}
+
+.btn-location {
+    width: 180px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    right: 40px;
+    float: right;
+    border: none;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-location:hover {
+    background-color: #3bedb2;
+    color: #fff;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    box-shadow: 0px 8px 14px 0px rgb(0 0 0 / 11%);
+    cursor: pointer;
+}
+
+.secondary-nav {
+    width: 100%;
+    min-height: 70px;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+}
+
+.links {
+    position: relative;
+    top: 23px;
+    left: 600px;
+    width: auto;
+    box-sizing: border-box;
+    padding-left: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 65px;
+    bottom: -8px;
+    background-color: #fff;
+    transition: .5s ease-in-out;
+}
+
+.links:hover::after {
+    content: '';
+    height: 3px;
+    width: 25%;
+    background-color: #fff;
+}
+
+.active-a {
+    font-weight: 800;
+}
+
+.search-icon {
+    position: relative;
+    top: 25px;
+    right: 65px;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Main */
+.parent-main {
+    height: 1300px;
+}
+
+.main {
+    background-image: url('/public/images/circle-1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 910px;
+    background-color: #f3f3f3;
+}
+
+.main-uptext {
+    display: flex;
+    max-width: 55%;
+    position: relative;
+    top: 230px;
+    left: 40px;
+    color: #292929;
+}
+
+.up-head {
+    margin-left: 150px;
+    letter-spacing: 2px;
+}
+
+.color-line {
+    width: 130px;
+    height: 9px;
+    position: absolute;
+    top: 33px;
+}
+
+.main-comp {
+    display: flex;
+    width: 100%;
+}
+
+.main-text {
+    max-width: 500px;
+    height: 500px;
+    position: relative;
+    top: 220px;
+    left: 40px;
+}
+
+.main-heading {
+    font-size: 70px;
+    font-weight: 800;
+    color: #292929;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+
+.dot {
+    color: #4facfe;
+}
+
+.para-main {
+    font-size: 19px;
+    color: #676767;
+}
+
+.nurse {
+    max-width: 680px;
+    min-height: 705px;
+    width: 60%;
+    position: relative;
+    top: 120px;
+    left: 60px;
+}
+
+.btn-main {
+    width: 167px;
+    height: 54px;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+    border: none;
+    box-shadow: 0px 9px 25px 0px rgb(75 183 241 / 50%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.btn-main:hover {
+    background: #4facfe;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.card {
+    width: 214px;
+    min-height: 262px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(195, 179, 179, 0.2), 0 6px 20px 0 rgba(156, 145, 145, 0.19);
+    text-align: center;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.4s ease-out;
+}
+
+.card::before {
+    color: #FFFFFF;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background: linear-gradient(to top right, #4facfe 0%, #38f9a5 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    color: #fff;
+}
+
+.card-bg {
+    background-color: #4facfe;
+    color: #fff;
+}
+
+.card-heading-bg {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    font-size: 27px;
+}
+
+.card-text {
+    position: relative;
+    top: 45px;
+    font-size: 17px;
+}
+
+/* Main-End */
+
+/* Container */
+.container {
+    display: flex;
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+.con-text {
+    position: relative;
+    left: 40px;
+    width: 500px;
+    height: 640px;
+}
+
+.con-heading {
+    font-size: 50px;
+    /* width: 496px;
+    height: 220px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.con-head-blue {
+    font-size: 18px;
+    color: #4facfe;
+}
+
+.con-line {
+    width: 100px;
+    height: 4px;
+}
+
+.con-para {
+    font-size: 19px;
+    /* width: 438px;
+    height: 171px; */
+    margin-bottom: 50px;
+}
+
+.nurse-2 {
+    max-width: 548px;
+    height: 541px;
+    position: relative;
+    left: 200px;
+}
+
+.timing {
+    max-width: 430px;
+    height: 417px;
+    position: absolute;
+    top: 270px;
+    left: 620px;
+    z-index: 1;
+    cursor: text;
+}
+
+/* Timing End */
+
+/* Services */
+.services {
+    width: 100%;
+    height: 1500px;
+}
+
+.serv-text {
+    max-width: 1193px;
+    height: 230px;
+    text-align: center;
+    position: relative;
+    left: 30px;
+}
+
+.serv-head-blue {
+    font-size: 18px;
+    color: #4facfe;
+}
+
+.serv-heading {
+    font-size: 50px;
+    color: #292929;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.widgets {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.wid-cards {
+    width: 494px;
+    height: 406px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.4s ease-out;
+    position: relative;
+}
+
+.wid-cards::before {
+    color: #FFFFFF;
+    content: "";
+    width: 494px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to top right, #4facfe 0%, #38f9a5 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.wid-cards:hover:before {
+    opacity: 1;
+}
+
+.wid-cards:hover {
+    color: #fff;
+}
+
+.wid-text {
+    position: relative;
+    top: 70px;
+}
+
+.wid-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.wid-para {
+    color: #676767;
+}
+
+.serv-button {
+    display: flex;
+    justify-content: center;
+}
+
+.wid-btn {
+    width: 220px;
+    height: 54px;
+    border: none;
+    background-color: #4facfe;
+    color: #fff;
+    box-shadow: 0px 9px 20px 0px rgb(79 172 254 / 40%);
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.wid-btn:hover {
+    background-color: #39b3d7;
+}
+
+/* Widget End */
+
+/* Details */
+.details {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background-color: #292929;
+}
+
+.details-text {
+    position: relative;
+    top: 180px;
+    left: 40px;
+    max-width: 500px;
+    height: 640px;
+}
+
+.deta-heading {
+    font-size: 50px;
+    width: 496px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.deta-head-blue {
+    font-size: 18px;
+    color: #4facfe;
+}
+
+.deta-line {
+    width: 100px;
+    height: 4px;
+}
+
+.deta-para {
+    font-size: 19px;
+    /* width: 534px;
+    height: 85px; */
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.points {
+    position: relative;
+    top: -15px;
+    min-height: 170px;
+}
+
+.deta-circle {
+    color: #fff;
+
+}
+
+.circle {
+    color: #38f9a5;
+    font-size: 9px;
+    position: relative;
+    top: -2px;
+}
+
+.deta-img {
+    width: 548px;
+    height: 493px;
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+
+.deta-num {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    z-index: 1;
+    display: flex;
+    gap: 12rem;
+    width: 644px;
+    height: 256px;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+}
+
+.num-1-text {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: #fff;
+    cursor: text;
+}
+
+.num-2-text {
+    position: absolute;
+    top: 75px;
+    color: #fff;
+    left: 450px;
+    cursor: text;
+}
+
+.counter-1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.counter-2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.para-count {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.store {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+}
+
+/* Staff */
+.staff {
+    height: 1400px;
+}
+
+.staff-text {
+    max-width: 1193px;
+    height: 430px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 30px;
+}
+
+.staff-head-blue {
+    font-size: 18px;
+    color: #4facfe;
+}
+
+.staff-heading {
+    font-size: 50px;
+    color: #292929;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.doc-list {
+    display: flex;
+    width: 100%;
+    height: 530px;
+    justify-content: space-evenly;
+}
+
+.doc-all {
+    height: 640px;
+}
+
+.doctor {
+    max-width: 379px;
+    height: 367px;
+}
+
+.doc {
+    border: 1px solid #dbdbdb;
+}
+
+.doc-name {
+    width: 300px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.doc-proff {
+    width: 200px;
+    font-size: 11px;
+    color: #676767;
+    margin-top: 5px;
+}
+
+.doc-text {
+    width: 100%;
+    height: 162px;
+    position: relative;
+    top: -6px;
+    z-index: 1;
+    transition: color 0.4s ease-out;
+}
+
+.doc-text::before {
+    color: #FFFFFF;
+    content: "";
+    width: 100%;
+    min-height: 162px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.doc-text:hover:before {
+    opacity: 1;
+}
+
+.doc-text:hover {
+    color: #fff;
+}
+
+.doc-subtext {
+    position: absolute;
+    left: 40px;
+}
+
+.icons {
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+
+/* Appointment */
+.appointment {
+    display: flex;
+    width: 100%;
+}
+
+.app-parent {
+    min-height: 1100px;
+}
+
+.app-first {
+    width: 50%;
+    min-height: 870px;
+    background-color: #292929;
+    z-index: 1;
+}
+
+.app-text {
+    position: relative;
+    top: 80px;
+    left: 30px;
+    width: 343px;
+    height: 300px;
+    color: #fff;
+}
+
+.app-small {
+    color: #38f9a5;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+
+.app-heading {
+    font-size: 50px;
+    /* width: 343px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.app-line {
+    width: 100px;
+    height: 4px;
+    background-color: #292929;
+}
+
+.app-form {
+    height: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width: 20%;
+}
+
+.form-all {
+    height: 350px;
+}
+
+.app-fields {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    width: 600px;
+}
+
+.app-input {
+    width: 224px;
+    background-color: #292929;
+    border: none;
+    border-bottom: 1px solid #676767;
+    color: #fff;
+}
+
+.app-input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.form-btn {
+    width: 164px;
+    height: 46px;
+    border: none;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px 9px 25px 0px rgb(75 183 241 / 50%);
+    cursor: pointer;
+}
+
+.app-img {
+    width: 660px;
+    height: 670px;
+    position: relative;
+    top: 0px;
+}
+
+/* Emergency */
+.emergency {
+    display: flex;
+    max-width: 1193px;
+    height: 270px;
+    background-color: #292929;
+    position: relative;
+    left: 40px;
+    box-shadow: 0 0 40px rgb(0 0 0 / 15%);
+}
+
+.emg-parent {
+    height: 300px;
+}
+
+.emg-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+.emg-text {
+    width: 60%;
+    height: 120px;
+    color: #fff;
+    position: relative;
+    top: 70px;
+    left: 200px;
+}
+
+.emg-para {
+    font-size: 35px;
+    color: #38f9a5;
+    margin-top: 5px;
+}
+
+.emg-text-2 {
+    position: relative;
+    top: 70px;
+    width: 40%;
+    height: 150px;
+    color: #fff;
+}
+
+.emg-btn {
+    width: 167px;
+    height: 54px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+    font-size: 16px;
+    box-shadow: 0px 9px 25px 0px rgb(75 183 241 / 50%);
+    cursor: pointer;
+}
+
+/* Blogs */
+.blog {
+    height: 1100px;
+}
+
+.blog-text {
+    max-width: 1193px;
+    height: 130px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 30px;
+}
+
+.bg-text-all {
+    height: 450px;
+}
+
+.blog-head-blue {
+    font-size: 18px;
+    color: #4facfe;
+}
+
+.blog-heading {
+    font-size: 50px;
+    color: #292929;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.latest-bg {
+    display: flex;
+    width: 100%;
+    height: 380px;
+    justify-content: space-evenly;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 347px;
+    height: 261px;
+    background-color: #fff;
+    box-shadow: 0px 7px 35px 0px rgb(0 0 0 / 10%);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.article::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+    z-index: -1;
+    transition: 0.5s ease-out;
+}
+
+.article:hover::before {
+    height: inherit;
+}
+
+.article:hover {
+    color: #fff;
+}
+
+
+.art-text {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    max-width: 170px;
+    height: 138px;
+    cursor: pointer;
+}
+
+.art-img {
+    max-width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.art-para-1 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #6a6a6a;
+}
+
+.art-para-2 {
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.bg-button {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-btn {
+    width: 167px;
+    height: 54px;
+    border: none;
+    background-color: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 9px 20px 0px rgb(79 172 254 / 40%);
+}
+
+.blog-btn:hover {
+    background-color: #39b3d7;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #292929;
+}
+
+.foot-first {
+    color: #fff;
+}
+
+.foot-para {
+    display: inline-block;
+    max-width: 357px;
+    height: 157px;
+    font-size: 35px;
+    color: #38f9a5;
+    margin-left: 30px;
+}
+
+.foot-input {
+    width: 250px;
+    height: 60px;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    border: none;
+    border-bottom: 1px solid #919191;
+    background-color: #292929;
+    margin-right: 30px;
+}
+
+.foot-input::placeholder {
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+.foot-btn {
+    float: right;
+    position: relative;
+    top: 90px;
+    right: 30px;
+    width: 160px;
+    height: 60px;
+    background: linear-gradient(to right, #4facfe 0%, #38f9a5 100%);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.foot-btn:hover {
+    background: #4facfe;
+}
+
+.hr-line {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border: 1px solid #484848;
+}
+
+.foot-second {
+    display: flex;
+    height: 400px;
+}
+
+.footer-text {
+    width: 300px;
+    position: relative;
+    left: 30px;
+}
+
+.foot-copy {
+    color: #fff;
+    max-width: 233px;
+    height: 57px;
+    font-size: 17px;
+}
+
+.foot-head {
+    font-size: 25px;
+    color: #38f9a5;
+}
+
+
+.footer-links {
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+.para-link {
+    color: #fff;
+    font-size: 17px;
+    margin-top: 35px;
+}
+
+.foot-icons {
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.foot-icons:hover {
+    color: #38f9a5;
+}
+
+@media screen and (min-width:2560px) and (max-width:3000px) {
+    .logo {
+        left: 500px;
+    }
+
+    .pin {
+        left: 1100px;
+    }
+
+    .phone {
+        left: 600px;
+    }
+
+
+    .btn-location {
+        right: 430px;
+    }
+
+    .links {
+        left: 1500px;
+    }
+
+    .search-icon {
+        right: 450px;
+    }
+
+    .parent-main {
+        height: 1400px;
+    }
+
+    .main-uptext {
+        left: 500px;
+    }
+
+    .nurse {
+        left: 750px;
+    }
+
+    .main-text {
+        max-width: 688px;
+        height: 550px;
+        left: 500px;
+    }
+
+    .cards {
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .nurse-2 {
+        left: 940px;
+    }
+
+    .timing {
+        left: 1250px;
+    }
+
+    .con-text {
+        left: 530px;
+    }
+
+    .serv-text {
+        left: 650px;
+    }
+
+    .widgets {
+        height: 700px;
+    }
+
+    .deta-img {
+        left: 1000px;
+    }
+
+    .deta-num {
+        left: 1000px;
+    }
+
+    .details-text {
+        left: 300px;
+    }
+
+    .staff-text {
+        left: 680px;
+    }
+
+    .doc-list {
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .app-img {
+        width: 1100px;
+        height: 1000px;
+    }
+
+    .emergency {
+        left: 700px;
+    }
+
+    .blog-text {
+        height: 150px;
+        left: 680px;
+    }
+
+    .footer-text {
+        left: 680px;
+    }
+}
+
+/* 2000px */
+@media screen and (min-width:2000px) and (max-width:2559px) {
+    .btn-location {
+        right: 200px;
+    }
+
+    .phone {
+        left: 500px;
+    }
+
+    .pin {
+        left: 800px;
+    }
+
+    .logo {
+        left: 200px;
+    }
+
+    .links {
+        left: 1200px;
+    }
+
+    .search-icon {
+        right: 220px;
+    }
+
+    .main-uptext {
+        left: 200px;
+    }
+
+    .nurse {
+        top: 100px;
+        left: 280px;
+    }
+
+    .main-text {
+        max-width: 688px;
+        height: 550px;
+        left: 200px;
+    }
+
+    .cards {
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .nurse-2 {
+        left: 640px;
+    }
+
+    .timing {
+        left: 1150px;
+    }
+
+    .con-text {
+        width: 700px;
+        height: 520px;
+        left: 250px;
+    }
+
+    .serv-text{
+        left: 400px;
+    }
+
+    .deta-img {
+        width: 736px;
+        height: 662px;
+        left: 400px;
+    }
+
+    .deta-num {
+        width: 720px;
+        left: 550px;
+        top: 450px;
+    }
+
+    .details-text {
+        max-width: 800px;
+        left: 200px;
+    }
+
+    .details-text {
+        left: 300px;
+    }
+
+    .staff-text{
+        left: 400px;
+    }
+
+    .doc-list{
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .app-img {
+        width: 950px;
+        height: 800px;
+    }
+
+    .app-text{
+        width: 600px;
+        height: 230px;
+        left: 150px;
+    }
+
+    .app-fields{
+        left: 150px;
+    }
+
+    .emergency{
+        left: 400px;
+    }
+
+    .blog-text{
+        height: 130px;
+        left: 400px;
+    }
+
+    .article{
+        width: 500px;
+    }
+
+    .art-text{
+        max-width: 230px;
+    }
+
+    .foot-input{
+        width: 336px;
+        top: 20px;
+        left: 300px;
+    }
+
+    .foot-para{
+        max-width: 500px;
+        position: relative;
+        top: 30px;
+        left: 150px;
+    }
+
+    .foot-btn{
+        top: 120px;
+        right: 200px;
+    }
+
+    .footer-text{
+        left: 200px;
+        width: 400px;
+    }
+
+}
+
+/* 1800px */
+@media screen and (min-width:1800px) and (max-width:1999px) {
+    .btn-location {
+        right: 100px;
+    }
+
+    .phone {
+        left: 500px;
+    }
+
+    .pin {
+        left: 800px;
+    }
+
+    .logo {
+        left: 100px;
+    }
+
+    .links {
+        left: 1080px;
+    }
+
+    .search-icon {
+        right: 120px;
+    }
+
+    .main-uptext {
+        left: 100px;
+    }
+
+    .nurse {
+        max-width: 892px;
+        height: 926px;
+        top: -90px;
+        left: 150px;
+    }
+
+    .main-text {
+        max-width: 688px;
+        height: 550px;
+        left: 100px;
+    }
+
+    .cards {
+        position: relative;
+        top: -200px;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .nurse-2 {
+        max-width: 736px;
+        height: 726px;
+        left: 240px;
+    }
+
+    .timing {
+        top: 390px;
+        left: 800px;
+    }
+
+    .con-text {
+        width: 700px;
+        height: 520px;
+        left: 100px;
+    }
+
+    .serv-text{
+        left: 300px;
+    }
+
+    .deta-img {
+        width: 736px;
+        height: 662px;
+        left: 200px;
+    }
+
+    .deta-num {
+        width: 720px;
+        left: 550px;
+        top: 400px;
+    }
+
+    .details-text {
+        max-width: 800px;
+        left: 100px;
+    }
+
+    .staff-text{
+        left: 300px;
+    }
+
+    .doc-list{
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .app-img {
+        width: 950px;
+        height: 800px;
+    }
+
+    .app-text{
+        width: 600px;
+        height: 230px;
+        left: 150px;
+    }
+
+    .app-fields{
+        left: 150px;
+    }
+
+    .emergency{
+        left: 300px;
+    }
+
+    .blog-text{
+        height: 130px;
+        left: 300px;
+    }
+
+    .article{
+        width: 500px;
+    }
+
+    .art-text{
+        max-width: 230px;
+    }
+
+    .foot-input{
+        width: 336px;
+        top: 20px;
+        left: 300px;
+    }
+
+    .foot-para{
+        max-width: 500px;
+        position: relative;
+        top: 30px;
+        left: 150px;
+    }
+
+    .foot-btn{
+        top: 120px;
+        right: 200px;
+    }
+
+    .footer-text{
+        left: 200px;
+        width: 400px;
+    }
+
+}
+
+/* 1600px */
+@media screen and (min-width:1600px) and (max-width:1799px) {
+    .btn-location {
+        right: 30px;
+    }
+
+    .phone {
+        left: 490px;
+    }
+
+    .pin {
+        left: 700px;
+    }
+
+    .logo {
+        left: 40px;
+    }
+
+    .links {
+        left: 950px;
+    }
+
+    .search-icon {
+        right: 50px;
+    }
+
+    .main-uptext {
+        left: 40px;
+    }
+
+    .nurse {
+        max-width: 872px;
+        height: 906px;
+        top: -90px;
+        left: 0px;
+    }
+
+    .main-text {
+        max-width: 688px;
+        height: 550px;
+        left: 40px;
+    }
+
+    .cards {
+        position: relative;
+        top: -200px;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .nurse-2 {
+        max-width: 703px;
+        height: 694px;
+        left: 150px;
+    }
+
+    .timing {
+        top: 390px;
+        left: 700px;
+    }
+
+    .con-text {
+        width: 700px;
+        height: 520px;
+        left: 40px;
+    }
+
+    .serv-text{
+        left: 200px;
+    }
+
+    .deta-img {
+        width: 703px;
+        height: 663px;
+        left: 90px;
+    }
+
+    .deta-num {
+        width: 720px;
+        left: 550px;
+        top: 400px;
+    }
+
+    .details-text {
+        max-width: 800px;
+        left: 40px;
+    }
+
+    .staff-text{
+        left: 200px;
+    }
+
+    .doc-list{
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .app-img {
+        width: 950px;
+        height: 800px;
+    }
+
+    .app-text{
+        width: 600px;
+        height: 230px;
+        left: 50px;
+    }
+
+    .app-fields{
+        left: 50px;
+    }
+
+    .emergency{
+        left: 200px;
+    }
+
+    .blog-text{
+        height: 150px;
+        left: 200px;
+    }
+
+    .article{
+        width: 500px;
+    }
+
+    .art-text{
+        max-width: 230px;
+    }
+
+    .foot-input{
+        width: 336px;
+        top: 20px;
+        left: 150px;
+    }
+
+    .foot-para{
+        max-width: 500px;
+        position: relative;
+        top: 30px;
+        left: 40px;
+    }
+
+    .foot-btn{
+        top: 120px;
+        right: 50px;
+    }
+
+    .footer-text{
+        left: 100px;
+        width: 350px;
+    }
+
+}
+
+/* 1440px */
+@media screen and (min-width:1440px) and (max-width:1599px) {
+    .btn-location {
+        right: 30px;
+    }
+
+    .phone {
+        left: 390px;
+    }
+
+    .pin {
+        left: 500px;
+    }
+
+    .logo {
+        left: 40px;
+    }
+
+    .links {
+        left: 800px;
+    }
+
+    .search-icon {
+        right: 50px;
+    }
+
+    .main-uptext {
+        left: 40px;
+    }
+
+    .nurse {
+        max-width: 780px;
+        height: 810px;
+        top: 40px;
+        left: 0px;
+    }
+
+    .main-text {
+        max-width: 688px;
+        height: 550px;
+        left: 40px;
+    }
+
+    .cards {
+        position: relative;
+        top: -200px;
+        justify-content: space-around;
+    }
+
+    .nurse-2 {
+        max-width: 630px;
+        height: 622px;
+        left: 170px;
+    }
+
+    .timing {
+        top: 320px;
+        left: 700px;
+    }
+
+    .con-text {
+        width: 600px;
+        height: 520px;
+        left: 40px;
+    }
+
+    .serv-text{
+        left: 130px;
+    }
+
+    .deta-img {
+        width: 630px;
+        height: 576px;
+        left: 80px;
+    }
+
+    .deta-num {
+        width: 760px;
+        /* height: 230px; */
+        left: 550px;
+        top: 400px;
+    }
+
+    .details-text {
+        max-width: 720px;
+        left: 40px;
+    }
+
+    .staff-text{
+        left: 200px;
+    }
+
+    .doc-list{
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .app-img {
+        width: 800px;
+        height: 730px;
+    }
+
+    .app-text{
+        width: 600px;
+        height: 230px;
+        left: 50px;
+    }
+
+    .app-fields{
+        left: 50px;
+    }
+
+    .emergency{
+        left: 120px;
+    }
+
+    .blog-text{
+        height: 150px;
+        left: 120px;
+    }
+
+    .article{
+        width: 407px;
+        height: 228px;
+    }
+
+    .art-text{
+        max-width: 230px;
+    }
+
+    .foot-input{
+        width: 286px;
+        top: 20px;
+        left: 50px;
+    }
+
+    .foot-para{
+        max-width: 500px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+
+    .foot-btn{
+        top: 120px;
+        right: 20px;
+    }
+
+    .footer-text{
+        left: 20px;
+        width: 350px;
+    }
+
+}
