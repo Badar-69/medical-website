@@ -15,7 +15,7 @@ export default function Footer() {
 
         <div className="foot-second">
           <div className="footer-text">
-            <img src={logp} alt="" />
+            <img src={logo} alt="" />
             <p className="foot-copy">Copyright &copy; 2022 Modify by Phlox theme. All Rights Reserved.</p>
           </div>
 
