@@ -1,4 +1,5 @@
 import React from 'react'
+import lineImg from '../assets/images/line.png'
 
 export default function Staff() {
     return (
@@ -7,7 +8,7 @@ export default function Staff() {
                 <div className="staff-text">
                     <h2 className='staff-head-blue'>Our Team</h2>
                     <h3 className="staff-heading">The Most Qualified Staff</h3>
-                    <img className='con-line' src="/images/line.png" alt="" />
+                    <img className='con-line' src={lineImg} alt="" />
                 </div>
                 <div className="doc-all">
                     <div className="doc-list">
