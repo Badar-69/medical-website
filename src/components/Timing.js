@@ -1,7 +1,7 @@
 import React from 'react'
 import lineImg from '../assets/images/line.png'
-import timeImg from '../assets/images/timing.png'
-import nurse2Img from '../assets/images/nurse.jpg'
+import timeImg from '../assets/images/timings.png'
+import nurse2Img from '../assets/images/nurse-2.jpg'
 
 export default function Timing() {
   return (
