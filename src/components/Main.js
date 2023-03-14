@@ -1,5 +1,6 @@
 import React from 'react'
-import nurseImg from '../assets/images/nurse.png'
+import nurseImg from '../assets/images/nurse.png';
+import lineImg from '../assets/images/line.png';
 
 export default function Main() {
     return (
@@ -7,7 +8,7 @@ export default function Main() {
             <div className="parent-main">
                 <div className="main">
                     <div className="main-uptext">
-                        <img className='color-line' src="/images/line.png" alt="line" />
+                        <img className='color-line' src={lineImg} alt="line" />
 
                         <h2 className='up-head'>Medical Center</h2>
                     </div>
