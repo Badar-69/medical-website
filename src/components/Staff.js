@@ -1,5 +1,9 @@
 import React from 'react'
 import lineImg from '../assets/images/line.png'
+import doc1Img from '../assets/images/doc-1.jpg'
+import doc2Img from '../assets/images/doc-2.jpg'
+import doc3Img from '../assets/images/doc-3.jpg'
+
 
 export default function Staff() {
     return (
@@ -13,7 +17,7 @@ export default function Staff() {
                 <div className="doc-all">
                     <div className="doc-list">
                         <div className="doc doc-1">
-                            <img className='doctor' src="/images/doc-1.jpg" alt="" />
+                            <img className='doctor' src={doc1Img} alt="" />
                             <div className="doc-text">
                                 <div className="doc-subtext">
                                     <h4 className='doc-name'>DR. MARIA ANGEL</h4>
@@ -26,7 +30,7 @@ export default function Staff() {
                         </div>
 
                         <div className="doc doc-2">
-                            <img className='doctor' src="/images/doc-2.jpg" alt="" />
+                            <img className='doctor' src={doc2Img}alt="" />
                             <div className="doc-text">
                                 <div className="doc-subtext">
                                     <h4 className='doc-name'>DR. WILLIAM ROBERT</h4>
@@ -39,7 +43,7 @@ export default function Staff() {
                         </div>
 
                         <div className="doc doc-3">
-                            <img className='doctor' src="/images/doc-3.jpg" alt="" />
+                            <img className='doctor' src={doc3Img} alt="" />
                             <div className="doc-text">
                                 <div className="doc-subtext">
                                     <h4 className='doc-name'>DR. MICHEL BERNADO</h4>

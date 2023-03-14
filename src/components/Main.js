@@ -1,6 +1,10 @@
 import React from 'react'
 import nurseImg from '../assets/images/nurse.png';
 import lineImg from '../assets/images/line.png';
+import bandImg from '../assets/images/bandages.png'
+import pillImg from '../assets/images/pills.png'
+import heartImg from '../assets/images/heart.png'
+import wheelImg from '../assets/images/wheelchair.png'
 
 export default function Main() {
     return (
@@ -31,28 +35,28 @@ export default function Main() {
 
                         <div className="card card-2">
                             <div className="card-text">
-                                <img src="/images/bandages.png" alt="bandage" />
+                                <img src={bandImg} alt="bandage" />
                                 <h4 className='card-heading'>Eye Treatments</h4>
                             </div>
                         </div>
 
                         <div className="card card-3">
                             <div className="card-text">
-                                <img src="/images/pills.png" alt="pills" />
+                                <img src={pillImg} alt="pills" />
                                 <h4 className='card-heading'>Nuclear Magnetic</h4>
                             </div>
                         </div>
 
                         <div className="card card-4">
                             <div className="card-text">
-                                <img src="/images/heart.png" alt="heart" />
+                                <img src={heartImg} alt="heart" />
                                 <h4 className='card-heading'>Traumatology</h4>
                             </div>
                         </div>
 
                         <div className="card card-5">
                             <div className="card-text">
-                                <img src="/images/wheelchair.png" alt="wheelchair" />
+                                <img src={wheelImg} alt="wheelchair" />
                                 <h4 className='card-heading'>Infantile Paralysis</h4>
                             </div>
                         </div>
