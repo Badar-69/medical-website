@@ -1,11 +1,12 @@
 import React from 'react'
+import telImg from '../assets/images/phone.png'
 
 export default function Emergency() {
     return (
         <>
             <div className="emg-parent">
                 <div className="emergency">
-                    <img className='emg-img' src="/images/phone.png" alt="" />
+                    <img className='emg-img' src={telImg} alt="" />
                     <div className="emg-text">
                         <h2 className='emg-heading'>In Case Of Emergency Call</h2>
                         <p className="emg-para">(510) 352-6578</p>
