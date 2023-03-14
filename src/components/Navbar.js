@@ -1,4 +1,7 @@
 import React from 'react'
+import pinImg from '../assets/images/pin.png'
+import telImg from '../assets/images/phone.png'
+import logo from '../assets/images/logo.jpg'
 
 export default function Navbar() {
     return (
@@ -6,12 +9,12 @@ export default function Navbar() {
             <div className="navbar">
                 <div className="location">
                     <div className="pin">
-                        <img className='pin-img' src="/images/pin.png" alt="" />
+                        <img className='pin-img' src={pinImg} alt="" />
                         <p className='para-pin'>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</p>
                     </div>
 
                     <div className="phone">
-                        <img className='phone-img' src="/images/phone.png" alt="" />
+                        <img className='phone-img' src={telImg} alt="" />
                         <p className='numbers'>(001) 88451234 <br /> (001) 88455438
                         </p>
                     </div>
@@ -19,7 +22,7 @@ export default function Navbar() {
                     <div className="button">
                         <button className='btn-location'>APPOINTMENT</button>
                     </div>
-                    <img className='logo' src="/images/logo.jpg" alt="" />
+                    <img className='logo' src={logo} alt="" />
 
                 </div>
 
