@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/images/logo.jpg'
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
 
         <div className="foot-second">
           <div className="footer-text">
-            <img src="/images/logo.jpg" alt="" />
+            <img src={logp} alt="" />
             <p className="foot-copy">Copyright &copy; 2022 Modify by Phlox theme. All Rights Reserved.</p>
           </div>
 
